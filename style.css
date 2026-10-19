@@ -11,19 +11,33 @@ nav {
   align-items: center;
 }
 
-/* LANDING */
+/* landing */
+
+#landing {
+  padding: 0 32px;
+}
 
 .nav__row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .nav__logo {
   display: flex;
   align-items: center;
+  padding: 8px 0;
+  color: #243E63
 }
 
 .nav__logo--img {
 height: 40px;
+border-radius: 6px;
+}
 
+.nav__logo--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  padding-left: 8px;
 }
