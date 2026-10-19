@@ -1,31 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  color: #243E63;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6415ff;
+  font-weight: bold;
+}
+
+nav {
+  padding-top: 32px;
+}
+
 .row {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-nav {
-  padding-top: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.purple {
+  color: #6415ff;
 }
-
-/* landing */
 
 #landing {
   padding: 0 32px;
 }
 
-.nav__row {
+.nav__row,
+.nav__logo{
   display: flex;
+  align-items: center;
+}
+
+.nav__row {
   justify-content: space-between;
   align-items: center;
 }
 
 .nav__logo {
-  display: flex;
-  align-items: center;
   padding: 8px 0;
   color: #243E63
 }
@@ -36,8 +60,20 @@ border-radius: 6px;
 }
 
 .nav__logo--title {
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 24px;
   padding-left: 8px;
 }
+
+.nav__links {
+  display:flex;
+  align-items: center;
+}
+
+a.nav__link {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 24px;
+  padding-top: 4px;
+}
+
