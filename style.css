@@ -12,13 +12,26 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  display: inline;
+}
 
 nav {
   padding-top: 32px;
+}
+
+section {
+  padding: 0 32px;
+}
+
+img {
+  width: 100%;
 }
 
 .row {
@@ -27,15 +40,30 @@ nav {
   margin: 0 auto;
 }
 
+.container {
+  padding: 96px 0;
+}
+
+.section__tag {
+  font-size: 16px;
+}
+
+.section__title {
+  margin: 16px 0;
+  font-size: 48px;
+}
+
+.section__para { 
+  font-size: 18px;
+  line-height: 1.75;
+  color:#7c8ba1;
+}
+
 .purple {
   color: #6415ff;
 }
 
-/* landing */
-
-#landing {
-  padding: 0 32px;
-}
+/* LANDING */
 
 .nav__row,
 .nav__logo{
@@ -115,10 +143,6 @@ display: flex;
 justify-content: space-between;
 }
 
-.header__container {
-  padding: 80px 0;
-}
-
 .header__description {
 width: 40%;
 }
@@ -129,7 +153,7 @@ h1 {
 
 .header__description--para {
   margin: 32px 0;
-  line-height: 1.5;
+  line-height: 2.5;
 }
 
 .header__email {
@@ -203,32 +227,10 @@ transition: border-color 300ms ease;
 
 /* FEATURES */
 
-#features {
-padding: 0 32px;
-}
-
-.features__container {
-  padding: 80px 0;
-}
-
 .features__text {
   text-align: center;
 }
 
-.features__tag {
-  font-size: 16px;
-}
-
-.features__title {
-  margin: 16px 0;
-  font-size: 48px;
-}
-
-.features__para { 
-  font-size: 18px;
-  line-height: 1.5;
-  color:#7c8ba1
-}
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -257,5 +259,53 @@ padding: 0 32px;
 .service__para {
   margin-top: 16px;
   line-height: 2.0;
-  
 }
+
+/* QUALITY-WORK */
+
+#quality-work .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qw__text-box {
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+
+.qw__img--wrapper {
+  width: 50%;
+  margin: 0 56px;
+}
+
+.btn {
+  color: white;
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+  width: 150px;
+  margin: 32px 0 0 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.qw__img--wrapper {
+  position: relative;
+ width: 50%;
+}
+
+.qw__img {
+ position: relative;
+  z-index: 2;
+}
+.qw__grid {
+width: 80px;
+height: 80px;
+fill: #6415ff;
+position: absolute;
+z-index: 1;
+}
+
