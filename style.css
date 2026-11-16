@@ -22,6 +22,10 @@ a {
   display: inline;
 }
 
+div {
+  display: block;
+}
+
 nav {
   padding-top: 32px;
 }
@@ -47,12 +51,14 @@ img {
 .section__tag {
   font-size: 16px;
   letter-spacing: 1.6px;
+  font-weight: 700;
 }
 
 .section__title {
   margin: 16px 0;
   font-size: 48px;
   font-weight: 900;
+  letter-spacing: 1.2px;
 }
 
 .section__para { 
@@ -77,6 +83,7 @@ img {
 .nav__row {
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 
 .nav__logo {
@@ -319,10 +326,153 @@ flex-direction: column;
 .qw__grid {
 width: 80px;
 height: 80px;
-fill: #6415ff;
+fill: rgb(100, 21, 255);
 position: absolute;
 bottom: 0;
 right: 0;
 transform: translate(50%, 50%);
 z-index: 1;
 }
+
+/* STEPS */
+
+#steps .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.steps__img--wrapper {
+  width: 50%;
+   position: relative;  
+}
+
+.steps__img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.steps__grid {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  transform: translate(-50%, 49%);
+  fill: #6415ff;
+  opacity: 0.15;
+}
+
+.steps__description {
+  width: 50%;
+  padding: 32px 0 32px 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  margin-top: 32px;
+  display: flex;
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.step__description {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.step__title {
+  font-size: 20px;
+  font-weight: 600;
+  }
+
+  .step__para {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #718096;
+  font-weight: 500;
+  line-height: 2;
+  }
+
+  /* VALUES */
+
+  #values .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #values .section__title {
+    margin-bottom: 32px;
+  }
+
+  .values__description, .values__image {
+    width: 50%;
+  }
+
+  .values__description {
+    padding: 32px 64px 32px 0;
+  }
+
+  .value__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .value {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    margin-top: 32px;
+  }
+
+  .value__title {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon__wrapper {
+    display: flex;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon__wrapper--color1 {
+    background-color: #9ae6b4;
+  }
+  
+  .icon__wrapper--color2 {
+    background-color: #feb2b2;
+  }
+  
+  .fas.fa-dollar-sign{
+    fill: rgb(39, 103, 73);
+  }
+  
+  .fas.fa-suitcase{
+    fill: rgb(155, 44, 44);
+  }
+
+  .value__name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12px;
+  }
+
+  .value__para {
+    margin-top: 16px;
+    color: #718096;
+    line-height: 1.625;
+  }
